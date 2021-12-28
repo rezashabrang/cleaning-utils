@@ -1,0 +1,8 @@
+include coverage.rc
+include LICENSE
+include MANIFEST.in
+include pytest.ini
+include setup.cfg
+include setup.py
+recursive-include tests *.py
+recursive-exclude __pycache__ *

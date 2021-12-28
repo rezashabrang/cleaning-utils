@@ -1,0 +1,61 @@
+{
+  "editor.formatOnSave": true,
+  "editor.rulers": [
+    88
+  ],
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#ff4081"
+  },
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--max-line-length=88",
+  ],
+  "extension-manager.extensions": [
+    "ms-python.python",
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig",
+    "2gua.rainbow-brackets",
+    "oderwat.indent-rainbow",
+    "yzhang.markdown-all-in-one",
+  ],
+  "python.testing.pytestArgs": [
+    "spec"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "git.ignoreLimitWarning": true,
+  "cSpell.words": [
+    "Babberton",
+    "bdist",
+    "isort",
+    "jalalidate",
+    "jalalidatetime",
+    "licence",
+    "Maani",
+    "mkdir",
+    "nunation",
+    "nunations",
+    "pydocstyle",
+    "Pylint",
+    "pylintrc",
+    "pypi",
+    "pypirc",
+    "pyproject",
+    "pytz",
+    "pyupgrade",
+    "rcfile",
+    "sdist",
+    "ؤإئأء",
+    "سلامُ",
+    "مُتَمَكِنائ",
+    "مُتَمَكِّنًائ",
+    "متمکنای",
+    "مُستَقِيم",
+    "مُسْتَقِيمٌ",
+    "مستقیم",
+    "موسیٰ",
+    "وایا"
+  ],
+}

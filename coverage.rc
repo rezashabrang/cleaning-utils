@@ -1,0 +1,3 @@
+[run]
+source = cleaning_utils,tests
+omit = */nose/*

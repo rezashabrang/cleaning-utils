@@ -1,0 +1,13 @@
+# This file contains values from Cookiecutter
+
+default_context:
+  project_name: "cleaning-utils"
+  project_description: "cleaning-utils is a collection of small Python functions for formatting persian texts."
+  organization: "aasaam"
+  license: "MIT"
+  minimal_python_version: 3.8
+  github_name: "MaaniBeigy"
+  email: "beygi.ma@iums.ac.ir"
+  version: "0.4.6"
+  line_length: "88"
+  create_example_template: "none"
