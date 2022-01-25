@@ -65,6 +65,9 @@ release:
 .PHONY: coverage
 coverage:
 	poetry run pytest --cov-report html --cov cleaning_utils tests/
+
+.PHONY: coverage-badge
+coverage-badge:
 	coverage-badge -o assets/images/coverage.svg -f
 
 .PHONY: check-codestyle
