@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "cleaning-utils"
-version = "0.4.6"
+version = "0.0.1"
 description = "cleaning-utils is a collection of small Python functions and classes for formatting persian texts."
 readme = "README.md"
 authors = ["aasaam <beygi.ma@iums.ac.ir>"]
