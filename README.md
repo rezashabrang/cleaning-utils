@@ -3,8 +3,8 @@
 # cleaning-utils
 
 
-[![cleaning-utils version](assets/images/cleaning-utils.svg)]
-[![python version](assets/images/python.svg)]
+[![cleaning-utils version](assets/images/cleaning-utils.svg)](https://github.com/rezashabrang/cleaning-utils)
+[![Python Version](https://img.shields.io/pypi/pyversions/cleaning-utils.svg)](https://pypi.org/project/cleaning-utils/)
 [![coverage report](assets/images/coverage.svg)](.logs/coverage.txt)
 [![static analysis](assets/images/mypy.svg)](.logs/mypy.txt)
 [![vulnerabilities](assets/images/vulnerabilities.svg)](.logs/safety.txt)
@@ -17,7 +17,7 @@
 [![Code style: black](assets/images/codestyle.svg)](https://github.com/psf/black)
 [![Security: bandit](assets/images/security.svg)](https://github.com/PyCQA/bandit)
 [![Pre-commit](assets/images/precommits.svg)](.pre-commit-config.yaml)
-[![license](assets/images/licence.svg)]
+[![License](https://img.shields.io/github/license/rezashabrang/cleaning-utils)](https://github.com/rezashabrang/cleaning-utils/blob/master/LICENSE)
 
 cleaning-utils is a collection of small Python functions and classes which make
 cleaning pipelines shorter and easier.
