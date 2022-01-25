@@ -40,8 +40,7 @@ jobs:
         make check-safety
     - name: Run mypy checks
       run: |
-        poetry run mypy --install-types
-        make mypy
+        poetry run mypy --config-file pyproject.toml --install-types ./
     - name: Run complexity
       run: |
         make complexity
