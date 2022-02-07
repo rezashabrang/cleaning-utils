@@ -39,7 +39,7 @@ datetime = "*"
 khayyam = "*"
 pytz = "*"
 pandas = "*"
-numpy = "*"
+numpy = "^1.22.0"
 urllib3 = "^1.26.4"
 
 [tool.poetry.dev-dependencies]
