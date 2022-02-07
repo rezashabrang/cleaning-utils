@@ -38,6 +38,7 @@ jobs:
     - name: Run safety checks
       run: |
         make check-safety
+      continue-on-error: true
     - name: Run mypy checks
       run: |
         poetry run mypy --config-file pyproject.toml --install-types --non-interactive ./
