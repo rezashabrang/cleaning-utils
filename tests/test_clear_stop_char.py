@@ -53,3 +53,13 @@ def test_clear_stop_char_without_halfspace():
         == "دانشگاه‌\
 های ایران"
     )
+
+
+def test_clear_stop_char_with_replace_char():
+    """Test for replace_char argument."""
+    input_text = "ست سرم )با ميل لوئر سوپا"
+    assert (
+        clear_stop_char(input_text, replace_char=".")
+        == "ست سرم .با ميل لوئر سوپا"
+    )
+    

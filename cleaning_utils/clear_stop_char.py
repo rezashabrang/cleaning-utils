@@ -13,6 +13,7 @@ def clear_stop_char(
     text: str,
     stoplist: Optional[List[str]] = None,
     exceptlist: Optional[List[str]] = None,
+    replace_char: str = " "
 ) -> str:
     r"""Clearing Stop Characters.
 
@@ -26,6 +27,8 @@ def clear_stop_char(
         exceptlist (list, default None): Accepts a list of exceptions,
             should escape special regex characters
             (e.g., exceptlist=['\\?']).
+        replace_char (str, default " "): Replacing the stop characters with a character
+            of choosing.
 
     Returns:
         A text variable of <class 'str'> after removing specified characters.
@@ -46,7 +49,7 @@ def clear_stop_char(
     # -------------------------- Make regex pattern ---------------------------
     pattern = "|".join(reps)
     # ---------------------------- Exert Function -----------------------------
-    clear_text = re.sub(pattern, " ", text)
+    clear_text = re.sub(pattern, replace_char, text)
     # replace double space with single space
 
     # strip leading and trailing stars but keep middle chars
@@ -89,6 +92,18 @@ def prepare_stop_char_list(
                 "\\`",
                 "\\،",
                 "\\_",
+                "\\{",
+                "\\}",
+                "\"",
+                "\\؛",
+                "\\«",
+                "\\»",
+                "\\;",
+                "\\—"
+                "\\“",
+                "\\”"
+                "\\‘",
+                "\\’",
             ]
             removes_exceptions_from_list(lister=reps, exceptlist=exceptlist)
         else:
@@ -116,6 +131,18 @@ def prepare_stop_char_list(
                 "\\`",
                 "\\،",
                 "\\_",
+                "\\{",
+                "\\}",
+                "\"",
+                "\\؛",
+                "\\«",
+                "\\»",
+                "\\;",
+                "\\—"
+                "\\“",
+                "\\”"
+                "\\‘",
+                "\\’",
             ]
     else:
         if exceptlist:
@@ -143,6 +170,18 @@ def prepare_stop_char_list(
                 "\\`",
                 "\\،",
                 "\\_",
+                "\\{",
+                "\\}",
+                "\"",
+                "\\؛",
+                "\\«",
+                "\\»",
+                "\\;",
+                "\\—"
+                "\\“",
+                "\\”"
+                "\\‘",
+                "\\’",
             ]
             removes_exceptions_from_list(lister=reps, exceptlist=exceptlist)
         else:
@@ -170,6 +209,18 @@ def prepare_stop_char_list(
                 "\\`",
                 "\\،",
                 "\\_",
+                "\\{",
+                "\\}",
+                "\"",
+                "\\؛",
+                "\\«",
+                "\\»",
+                "\\;",
+                "\\—"
+                "\\“",
+                "\\”"
+                "\\‘",
+                "\\’",
             ]
     return reps
 
