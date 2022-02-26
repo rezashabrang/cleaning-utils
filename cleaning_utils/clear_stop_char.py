@@ -13,7 +13,7 @@ def clear_stop_char(
     text: str,
     stoplist: Optional[List[str]] = None,
     exceptlist: Optional[List[str]] = None,
-    replace_char: str = " "
+    replace_char: str = " ",
 ) -> str:
     r"""Clearing Stop Characters.
 
@@ -27,7 +27,7 @@ def clear_stop_char(
         exceptlist (list, default None): Accepts a list of exceptions,
             should escape special regex characters
             (e.g., exceptlist=['\\?']).
-        replace_char (str, default " "): Replacing the stop characters with a character
+        replace_char (str): Replacing the stop characters with a character
             of choosing.
 
     Returns:
@@ -94,15 +94,13 @@ def prepare_stop_char_list(
                 "\\_",
                 "\\{",
                 "\\}",
-                "\"",
+                '"',
                 "\\؛",
                 "\\«",
                 "\\»",
                 "\\;",
-                "\\—"
-                "\\“",
-                "\\”"
-                "\\‘",
+                "\\—" "\\“",
+                "\\”" "\\‘",
                 "\\’",
             ]
             removes_exceptions_from_list(lister=reps, exceptlist=exceptlist)
@@ -133,15 +131,13 @@ def prepare_stop_char_list(
                 "\\_",
                 "\\{",
                 "\\}",
-                "\"",
+                '"',
                 "\\؛",
                 "\\«",
                 "\\»",
                 "\\;",
-                "\\—"
-                "\\“",
-                "\\”"
-                "\\‘",
+                "\\—" "\\“",
+                "\\”" "\\‘",
                 "\\’",
             ]
     else:
@@ -172,15 +168,13 @@ def prepare_stop_char_list(
                 "\\_",
                 "\\{",
                 "\\}",
-                "\"",
+                '"',
                 "\\؛",
                 "\\«",
                 "\\»",
                 "\\;",
-                "\\—"
-                "\\“",
-                "\\”"
-                "\\‘",
+                "\\—" "\\“",
+                "\\”" "\\‘",
                 "\\’",
             ]
             removes_exceptions_from_list(lister=reps, exceptlist=exceptlist)
@@ -211,15 +205,13 @@ def prepare_stop_char_list(
                 "\\_",
                 "\\{",
                 "\\}",
-                "\"",
+                '"',
                 "\\؛",
                 "\\«",
                 "\\»",
                 "\\;",
-                "\\—"
-                "\\“",
-                "\\”"
-                "\\‘",
+                "\\—" "\\“",
+                "\\”" "\\‘",
                 "\\’",
             ]
     return reps

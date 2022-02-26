@@ -16,7 +16,8 @@ setuptools.setup(
 and classes for formatting persian texts.""",
     license="MIT",
     packages=setuptools.find_packages(
-        exclude=["_cleaning_utils_tests", "*.__pycache__"]),
+        exclude=["_cleaning_utils_tests", "*.__pycache__"]
+    ),
     python_requires=">=3.8",
     install_requires=["python-dateutil", "datetime", "khayyam", "pytz"],
     tests_require=["pytest"],

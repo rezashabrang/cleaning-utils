@@ -117,3 +117,9 @@ build-remove:
 
 .PHONY: clean-all
 clean-all: pycache-remove build-remove docker-remove
+
+
+.PHONY: change-codestyle
+change-codestyle:
+	poetry run isort --settings-path pyproject.toml ./
+	poetry run black --config pyproject.toml ./
