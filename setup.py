@@ -8,7 +8,7 @@ pytest_runner = ["pytest-runner"] if needs_pytest else []
 
 setuptools.setup(
     name="cleaning-utils",
-    version="0.1.2",
+    version="0.1.3",
     author="Maani Beigy",
     author_email="beygi.ma@iums.ac.ir",
     url="https://github.com/rezashabrang/cleaning-utils",

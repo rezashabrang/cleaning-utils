@@ -25,7 +25,7 @@ from .space_cleaner import space_cleaner
 from .to_fa_numbers import to_fa_numbers
 from .to_iso_datetime import to_iso_datetime
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 __all__ = [
     "clear_stop_char",
     "replace_arabic_char",
