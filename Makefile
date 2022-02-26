@@ -78,7 +78,7 @@ check-codestyle:
 
 .PHONY: mypy
 mypy:
-	poetry run mypy --config-file pyproject.toml ./
+	poetry run mypy --install-types --non-interactive --config-file pyproject.toml ./
 
 .PHONY: check-safety
 check-safety:

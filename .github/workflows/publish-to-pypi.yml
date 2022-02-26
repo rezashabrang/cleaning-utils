@@ -59,6 +59,7 @@ jobs:
 
   build-n-publish:
     name: Build and publish cleaning-utils package to PyPI and TestPyPI
+    needs: build-n-test
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@master
