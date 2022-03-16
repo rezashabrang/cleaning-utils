@@ -41,3 +41,14 @@ def replace_stop_words(
         lambda m: rep[re.escape(m.group(0))],
         text,
     )
+
+
+def clear_stop_words(
+    text: str, stop_list: Iterable[str], replace_char: str = " "
+) -> str:
+    """Replace stop words with specified replace character."""
+    pattern = "|".join(stop_list)
+    # ---------------------------- Exert Function -----------------------------
+    clear_text = re.sub(pattern, replace_char, text)
+
+    return clear_text
