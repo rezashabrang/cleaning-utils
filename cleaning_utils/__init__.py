@@ -20,7 +20,7 @@ from .replace_arabic_char import (
     replace_arabic_letters,
     replace_arabic_numbers,
 )
-from .replace_stop_words import replace_stop_words, clear_stop_words
+from .replace_stop_words import clear_stop_words, replace_stop_words
 from .space_cleaner import space_cleaner
 from .to_fa_numbers import to_fa_numbers
 from .to_iso_datetime import to_iso_datetime
