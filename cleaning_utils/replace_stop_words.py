@@ -48,6 +48,7 @@ def clear_stop_words(
 ) -> str:
     """Replace stop words with specified replace character."""
     pattern = "|".join(stop_list)
+    pattern = re.compile(r"\b(" + pattern + r")\b")
     # ---------------------------- Exert Function -----------------------------
     clear_text = re.sub(pattern, replace_char, text)
 
