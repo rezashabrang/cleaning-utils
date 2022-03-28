@@ -1,9 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [0.1.4] - 2022-03-16
+## [0.1.4] - 2022-03-28
 ### Added
-- function for clearing or replacing stop words (clear_stop_words)
+- Function for clearing or replacing stop words (clear_stop_words)
+
+## Fixed
+- Fixing clear_stop_words
 
 ## [0.1.3] - 2022-02-26
 ### Added
