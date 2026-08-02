@@ -231,7 +231,7 @@ def strip_stars(text: str) -> str:
         'hello to people'
 
     """
-    return text.strip("**").strip("*")
+    return text.strip("*")
 
 
 def removes_exceptions_from_list(
